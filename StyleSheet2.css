@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(2160x1920-Background-HD-Wallpaper-082-600x533.jpg) ; /* Set your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: transparent ; /* White background with transparency */
+    padding: 30px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px) ;
+    box-shadow: 0 0 100px rgba(16, 10, 197, 0.393);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #2a2992;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0a3092;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e28a7;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7036e5;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
