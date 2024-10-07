@@ -7,11 +7,10 @@
 body {
     font-family: 'Arial Nova';
     line-height: 1.4;
-    
+    background-color:none;
     color: black;
-     background-image: url("ab078eca.jpg") ;
+    background-image: url("ab078eca.jpg") ;
     background-size: cover;
-    
 }
 
 /* Header styles */
