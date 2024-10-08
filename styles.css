@@ -21,24 +21,23 @@ body {
 .container:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}/* New styles for profile picture */
+}
 .container-wrapper {
     display: flex;
-    align-items: center; /* Vertically center the items */
+    align-items: center; 
 }
 
 #profile-pic {
-    width: 500px; /* Adjust the size as needed */
-    height: 500px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image circular */
-    margin-right: none; /* Space between image and content */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%;
+    margin-right: none; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Existing styles below */
 
 
-/* Navbar styles */
+
 nav {
     position: relative;
     z-index: 10;
@@ -75,7 +74,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Section styles */
+
 .section {
     margin-top: 20px;
     padding: 15px;
@@ -94,7 +93,7 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Portfolio item styles */
+
 .portfolio-item {
     font-size: 16px;
     margin: 10px 0;
@@ -110,7 +109,7 @@ nav ul li a:hover {
     background: rgba(0, 123, 255, 0.1);
 }
 
-/* Blockquote styles */
+
 blockquote {
     margin: 15px 0;
     padding: 10px;
@@ -128,7 +127,7 @@ blockquote footer {
     font-weight: bold;
 }
 
-/* Button styles */
+
 button {
     padding: 10px 15px;
     background-color: #007BFF;
@@ -144,7 +143,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Bubbles */
 .bubbles {
     position: absolute;
     top: 0;
