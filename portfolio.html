@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="bubbles"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Portfolio</h1>
+        <div class="section">
+            <h3>My Work</h3>
+            <ul id="portfolio">
+                <li class="portfolio-item">Portfolio Item 1: A web application built using React that allows users to track their tasks efficiently.</li>
+                <li class="portfolio-item">Portfolio Item 2: An e-commerce website created with HTML, CSS, and JavaScript, featuring a responsive design and secure payment options.</li>
+                <li class="portfolio-item">Portfolio Item 3: A personal blog developed using WordPress, showcasing my thoughts on web development and design trends.</li>
+                <li class="portfolio-item">Portfolio Item 4: A mobile app built with Flutter, designed to help users manage their fitness goals and track progress.</li>
+                <li class="portfolio-item">Portfolio Item 5: A data visualization dashboard created with D3.js, providing insights into various datasets through interactive charts.</li>
+            </ul>
+            <button onclick="editContent()">Edit</button>
+            <button onclick="deleteContent('portfolio')">Delete</button>
+            <button onclick="addContent('portfolio')">Insert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
