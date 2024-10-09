@@ -20,9 +20,10 @@ body {
 }
 
 nav ul {
-    display: flex; /* Maintain flexbox layout */
-    justify-content: space-around; /* Distribute items evenly */
-    flex-wrap: wrap; /* Allow wrapping of items */
+    display: flex;
+    justify-content: space-between; /* Adjust for even spacing */
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 0; /* Remove default padding */
 }
 
 @media (max-width: 1024px) {
@@ -44,6 +45,10 @@ nav ul {
         padding: 10px; /* Reduce padding */
     }
 
+    .container {
+        padding: 10px; /* Adjust container padding */
+    }
+
     nav ul {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
@@ -51,6 +56,25 @@ nav ul {
 
     nav ul li {
         margin: 5px 0; /* Adjust margin for stacked items */
+    }
+
+    button {
+        padding: 12px 20px; /* Increase button padding */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .section {
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    .portfolio-item {
+        font-size: 14px; /* Smaller font size on mobile */
+        padding: 10px; /* More padding for touch devices */
+    }
+
+    .bubble {
+        width: 30px; /* Smaller bubbles */
+        height: 30px;
     }
 }
 
