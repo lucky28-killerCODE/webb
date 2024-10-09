@@ -3,8 +3,9 @@ body {
     background: linear-gradient(135deg, #6e7dff, #a1c4ff);
     margin: 0;
     padding: 20px;
-    overflow: auto; /* Allow scrolling */
-    height: 100vh; /* Fill the viewport */
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto; /* Allow body height to expand */
+    min-height: 100vh; /* Ensure it fills the viewport height */
 }
 
 .container {
@@ -185,8 +186,12 @@ button:focus {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce body padding on smaller screens */
+    }
+
     .container {
-        padding: 10px; /* Reduce padding on smaller screens */
+        padding: 15px; /* Reduce padding on smaller screens */
     }
 
     nav ul {
@@ -204,6 +209,12 @@ button:focus {
 
     .section {
         margin-top: 10px; /* Reduce space between sections */
+        padding: 10px; /* Adjust padding for sections */
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on smaller screens */
     }
 }
+
 
