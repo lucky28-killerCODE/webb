@@ -3,12 +3,13 @@ body {
     background: linear-gradient(135deg, #6e7dff, #a1c4ff);
     margin: 0;
     padding: 20px;
-    overflow: hidden;
+    overflow: hidden; 
+    height: 100vh; 
 }
 
 .container {
     position: relative;
-    max-width: 600px;
+    max-width: 90%; 
     margin: auto;
     background: white;
     padding: 20px;
@@ -22,21 +23,19 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
+
 .container-wrapper {
     display: flex;
     align-items: center; 
 }
 
 #profile-pic {
-    width: 500px; 
-    height: 500px; 
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Limit max width */
     border-radius: 50%;
-    margin-right: none; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
-
-
-
 
 nav {
     position: relative;
@@ -74,7 +73,6 @@ nav ul li a:hover {
     color: white;
 }
 
-
 .section {
     margin-top: 20px;
     padding: 15px;
@@ -93,7 +91,6 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-
 .portfolio-item {
     font-size: 16px;
     margin: 10px 0;
@@ -108,7 +105,6 @@ nav ul li a:hover {
 .portfolio-item:hover {
     background: rgba(0, 123, 255, 0.1);
 }
-
 
 blockquote {
     margin: 15px 0;
@@ -126,7 +122,6 @@ blockquote footer {
     text-align: right;
     font-weight: bold;
 }
-
 
 button {
     padding: 10px 15px;
@@ -182,3 +177,22 @@ button:hover {
 .bubble:nth-child(6) { left: 60%; width: 50px; height: 50px; animation-duration: 15s; animation-delay: 3s; }
 .bubble:nth-child(7) { left: 70%; width: 40px; height: 40px; animation-duration: 9s; animation-delay: 5s; }
 .bubble:nth-child(8) { left: 80%; width: 70px; height: 70px; animation-duration: 13s; animation-delay: 7s; }
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+     {
+        max-width: 100%; 
+    }
+}
