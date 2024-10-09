@@ -48,15 +48,16 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Maintain flexbox layout */
+    justify-content: space-around; /* Distribute items evenly */
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Allow wrapping of items */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Space between items */
 }
 
 nav ul li a {
@@ -71,6 +72,24 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgb(27, 17, 112);
     color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
+}
+
 }
 
 .section {
