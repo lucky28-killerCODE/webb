@@ -3,13 +3,13 @@ body {
     background: linear-gradient(135deg, #6e7dff, #a1c4ff);
     margin: 0;
     padding: 20px;
-    overflow: hidden; /* Consider changing this for scrolling */
-    height: 100vh; /* Allow the body to fill the viewport */
+    overflow: auto; /* Allow scrolling */
+    height: 100vh; /* Fill the viewport */
 }
 
 .container {
     position: relative;
-    max-width: 90%; /* Change to a percentage for responsiveness */
+    max-width: 1200px; /* Set max-width for larger screens */
     margin: auto;
     background: white;
     padding: 20px;
@@ -138,6 +138,11 @@ button:hover {
     transform: scale(1.05);
 }
 
+button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
 .bubbles {
     position: absolute;
     top: 0;
@@ -186,6 +191,7 @@ button:hover {
 
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
     }
 
     nav ul li {
@@ -194,6 +200,10 @@ button:hover {
 
     #profile-pic {
         max-width: 100%; /* Make profile picture fully responsive */
+    }
+
+    .section {
+        margin-top: 10px; /* Reduce space between sections */
     }
 }
 
