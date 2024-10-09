@@ -16,8 +16,8 @@ body {
 }
 
 #profile-pic {
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
+    width: 500px; /* Fixed width */
+    height: 500px; /* Fixed height */
     border-radius: 50%; /* Makes it a circle */
     object-fit: cover; /* Ensures the image covers the circle */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
