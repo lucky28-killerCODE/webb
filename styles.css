@@ -90,8 +90,6 @@ nav ul li a:hover {
     }
 }
 
-}
-
 .section {
     margin-top: 20px;
     padding: 15px;
@@ -196,22 +194,3 @@ button:hover {
 .bubble:nth-child(6) { left: 60%; width: 50px; height: 50px; animation-duration: 15s; animation-delay: 3s; }
 .bubble:nth-child(7) { left: 70%; width: 40px; height: 40px; animation-duration: 9s; animation-delay: 5s; }
 .bubble:nth-child(8) { left: 80%; width: 70px; height: 70px; animation-duration: 13s; animation-delay: 7s; }
-
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px; 
-    }
-
-    nav ul {
-        flex-direction: column; 
-    }
-
-    nav ul li {
-        margin: 5px 0; 
-    }
-
-     {
-        max-width: 100%; 
-    }
-}
