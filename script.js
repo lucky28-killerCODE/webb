@@ -3,7 +3,7 @@ function editContent() {
 
     if (activePage === "index.html") {
         const name = prompt("Enter your name:", document.getElementById("name").innerText);
-        const title = prompt("Enter your job title:", document.getElementById("title").innerText);
+        const title = prompt("Enter your title:", document.getElementById("title").innerText);
         const about = prompt("About Me:", document.getElementById("about").innerText);
         
         if (name) document.getElementById("name").innerText = name;
